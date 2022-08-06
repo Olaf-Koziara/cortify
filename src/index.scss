@@ -1,13 +1,73 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("./assets/fonts/SF-Pro-Rounded-Regular.otf");
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("./assets/fonts/SF-Pro-Rounded-Medium.otf");
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("./assets/fonts/SF-Pro-Rounded-Bold.otf");
+}
+
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "San Francisco";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  padding: 0 15px;
+}
+*{
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.row{
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.col{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+.col-12{
+  @extend .col;
+  max-width: 100%;
+}
+.col-6{
+  @extend .col;
+  max-width: 50%;
+}
+.col-4{
+  @extend .col;
+  max-width: 33.3333%;
+}
+.col-3{
+  @extend .col;
+  max-width: 25%;
+}
+.col-2{
+  @extend .col;
+  max-width: 16.6667%;
+}
+.col-1{
+  @extend .col;
+  max-width: 8.3333%;
 }

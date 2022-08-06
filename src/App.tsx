@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
+import LoginPage from "./Pages/LoginPage/LoginPage";
 
 function App() {
-  return (
-    <div className="App">
+    return (
+        <div className="App">
 
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;

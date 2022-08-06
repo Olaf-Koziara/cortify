@@ -1,0 +1,30 @@
+.text-input{
+  width: 100%;
+  color: rgba(60,60,67,0.6);
+  &-underline{
+    @extend .text-input;
+    padding: 5px;
+    border-width: 0 0 1px 0;
+    border-bottom-color: rgba(60, 60, 67, 0.29);
+    &--gray{
+      @extend .text-input-underline;
+      background: rgba(118,118,128,0.12);
+    }
+    &--transparent{
+      @extend .text-input-underline;
+      background: transparent;
+    }
+  }
+ &-rounded{
+   @extend .text-input;
+   padding: 9px 10px;
+   border-radius: 10px;
+   border: none;
+
+   &--gray{
+     @extend .text-input-rounded;
+     background: rgba(118,118,128,0.12);
+   }
+
+ }
+}
